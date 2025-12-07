@@ -74,7 +74,7 @@ $posts = $postModel->listarFeed($_SESSION['usuario_id']);
             </div>
 
             <form class="create-post-section" method="POST">
-                <textarea class="post-input" name="conteudo" placeholder="No que você está pensando?" required></textarea>
+                <textarea class="post-input" name="conteudo" placeholder="Escrever seu post" required></textarea>
                 <button type="submit" class="post-btn">Postar</button>
             </form>
 
@@ -107,4 +107,5 @@ $posts = $postModel->listarFeed($_SESSION['usuario_id']);
         </main>
     </div>
 </body>
+
 </html>
