@@ -1,0 +1,352 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}
+
+
+.sidebar {
+    width: 60px;
+    background-color: white;
+    border-right: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.sidebar-icon {
+    font-size: 24px;
+    color: dimgray;
+    text-decoration: none;
+}
+
+.sidebar-icon:hover {
+    color: black;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Perfil */
+.user-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.user-handle {
+    color: gray;
+    font-size: 14px;
+}
+
+.edit-profile-btn {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.edit-profile-btn:hover {
+    background-color: lightgray;
+}
+
+/* post */
+.create-post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.post-input {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.post-btn {
+    align-self: flex-end;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.post-btn:hover {
+    background-color: darkblue;
+}
+
+/* Feed */
+.post-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post-author-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-author-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.post-author-handle {
+    color: gray;
+    font-size: 13px;
+}
+
+.post-body p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.post-actions {
+    display: flex;
+    gap: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.action-item i {
+    cursor: pointer;
+}
+
+.red-heart {
+    color: red;
+}
+
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    max-width: 400px;
+}
+
+.form-cadastro label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-cadastro input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-cadastro input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cadastro-btn {
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cadastro-btn:hover {
+    background-color: darkblue;
+}
+
+
+body.cadastro-body {
+    background: whitesmoke !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.card-cadastro {
+    background: white;
+    padding: 35px;
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px gray;
+    text-align: center;
+}
+
+.card-cadastro h2 {
+    margin-bottom: 4px;
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.card-cadastro form {
+    text-align: left;
+    width: 100%;
+}
+
+.card-cadastro label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-cadastro input,
+.card-cadastro select {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    font-size: 14px;
+}
+
+.card-cadastro input:focus,
+.card-cadastro select:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+.btn-submit:hover {
+    background:blue;
+}
+
+.link-voltar {
+    margin-top: 12px;
+    display: block;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-voltar:hover {
+    text-decoration: underline;
+}
